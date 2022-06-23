@@ -1,0 +1,62 @@
+table {
+  border: 1px solid #ccc;
+  font-size: 1vw;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+tr {
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.badge {
+  background-color: rgba(120, 119, 204, 0.25);
+  color: rgba(120, 119, 204);
+  padding: 8px 10px;
+  font-size: 0.9vw;
+  width: max-content;
+  font-weight: 600;
+  border-radius: 100px;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.refreshButton {
+  background-color: #7877cc40;
+  color: #7877cc;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1vw;
+  width: max-content;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 20px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.search {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1vw;
+  color: #2b2b2b;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.search:focus {
+  outline: none;
+  border-color: rgba(120, 119, 204);
+}

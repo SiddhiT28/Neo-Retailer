@@ -1,0 +1,168 @@
+.retailer_products_view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.retailer_products_view .retailer_products_title {
+  font-size: 1vw;
+}
+.retailer_products_view .retailer_products_title .retailer_products_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.retailer_products_view .retailer_products_cta {
+  letter-spacing: 1.14px;
+  font-size: 0.9vw;
+  font-weight: 500;
+  background-color: #7877cc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px #7877ccca;
+  margin-bottom: 20px;
+}
+
+.retailer_products_view .retailer_products_cta:hover {
+  background-color: #605eba;
+  color: white;
+}
+
+/* ADD PRODUCT MODEL */
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.addProductModel_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+}
+
+.addProductModel_background .addProductModel_content {
+  width: 40vw;
+  height: 80vh;
+  overflow-y: scroll;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  animation: popup 0.3s ease-in;
+  animation-fill-mode: backwards;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.addProductModel_background .addProductModel_content .form_input_grp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+
+.addProductModel_background .addProductModel_content .form_input_grp label {
+  font-size: 1vw;
+  color: #2b2b2b;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.addProductModel_background .addProductModel_content .form_input_grp input {
+  width: 100%;
+  border-bottom: 1px solid #7877cc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1vw;
+  color: #2b2b2b;
+  transition: all 0.3s ease;
+}
+
+.addProductModel_background
+  .addProductModel_content
+  .form_input_grp
+  .input_grp_checkbox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 3vw;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.addProductModel_background
+  .addProductModel_content
+  .form_input_grp
+  .input_grp_checkbox
+  li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.addProductModel_background
+  .addProductModel_content
+  .form_input_grp
+  .input_grp_checkbox
+  li
+  label {
+  font-family: 400;
+}
+.addProductModel_background
+  .addProductModel_content
+  .form_input_grp
+  .input_grp_checkbox
+  li
+  input[type="checkbox"] {
+  width: 20px;
+  border-radius: 5px;
+  border: 1px solid #7877cc;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addProductModel_background .addProductModel_content .form_input_grp textarea {
+  width: 100%;
+  height: 10vh;
+  border: none;
+  border-bottom: 1px solid #7877cc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1vw;
+  resize: none;
+  outline: none;
+}
+
+.addProductModel_background .addProductModel_content .form_input_grp button {
+  width: 100%;
+  border: 1px solid #7877cc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1vw;
+  font-weight: 500;
+  background: #7877cc;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
